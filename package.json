@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/",
+    "sass": "sass --watch ./style/style.scss:./style/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimblu/portfolio.git",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimblu/portfolio/issues"
+  },
+  "homepage": "https://github.com/jimblu/portfolio#readme",
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.7",
+    "postcss-cli": "^8.2.0"
+  }
+}
