@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #6396FF;
+}
+.container{
+    padding: 4rem 4rem 0 4rem;
+    width: calc(100vw - 8rem);
+}
+#canvas{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 62vh;
+    width: 100%;
+    .aboutMe{
+        font-family: DM Mono;
+        font-weight: 400;
+        //font-size: 3rem;
+        font-size: clamp(1rem, calc(1rem + 2vw), 3rem); 
+        color: #FFFFFF;
+        max-width: 1000px;
+    }
+}
+
+.burger{
+    align-self: flex-end;
+    position: relative;
+    background-color: #FFF;
+    width: 70px;
+    height: 11px;
+    border-radius: 19.5px;
+    transition: 250ms ease-in-out;
+    z-index: 1;
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: #FFF;
+        width: 70px;
+        height: 11px;
+        border-radius: 19.5px;
+        top: 160%;
+        transition: transform 250ms ease-in-out;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: #FFF;
+        width: 70px;
+        height: 11px;
+        border-radius: 19.5px;
+        top: -160%;
+        transition: transform 250ms ease-in-out;
+    }
+}
