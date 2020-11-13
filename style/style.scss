@@ -14,9 +14,8 @@ body{
     z-index: -1;
     width: 100vw;
     height: 100vh;
+    border-bottom: 30px ridge #FFF;
 }
-
-
 .header{
     display: flex;
     flex-direction: column;
@@ -35,7 +34,6 @@ body{
     .aboutMe{
         font-family: DM Mono;
         font-weight: 400;
-        //font-size: 3rem;
         //font-size: clamp(1rem, calc(1rem + 2vw), 3rem); 
         font-size: calc(1rem + 2vw);
         color: #FFFFFF;
@@ -44,122 +42,156 @@ body{
     }
 }
 
-div.burgerLevels.burgerLevels{
+div.burgerLevels{
     background-color: #FFF;
     margin: 3px;
     width: 70px;
     height: 11px;
     border-radius: 19.5px;
-    transition: 250ms ease-in-out;
     z-index: 2;
     cursor: pointer;
-    &:hover{
-
-    }
 }
-.menu{
+.burger{
     position: relative;
     align-self: flex-end;
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
     .burgerUp.burgerLevels{
-        transition: background-color 100ms ease-in-out;
-        &:hover{
-            background-color: #2E00EA;
-        }
+        animation: blueFlash 1.4s linear infinite;
+        animation-delay: 1s;
     }
     .burgerMid.burgerLevels{
         width: 52.5px;
-        transition: background-color 100ms ease-in-out;
-        &:hover{
-            background-color: #FEED00;
-        }
+        animation: blueFlash 1.4s linear infinite;
+        animation-delay: 1.3s;
     }
     .burgerDown.burgerLevels{
         width: 35px;
-        transition: background-color 100ms ease-in-out;
-        &:hover{
-            background-color: #FF0000;
-        }
+        animation: blueFlash 1.4s linear infinite;
+        animation-delay: 1.6s;
     }
-    .blogGate{
+    .dot{
         background-color: #FFF;
         width: 17.5px;
         height: 17.5px;
         border-radius: 19.5px;
-        transition: 250ms ease-in-out;
         z-index: 2;
+        animation: blueFlash 1.4s linear infinite;
+        animation-delay: 1.9;
         cursor: pointer;
-        transition: background-color 100ms ease-in-out;
-        &:hover{
-            background-color: rgba(255, 255, 255, 0.65);
+    }
+}
+
+/*@keyframes blueFlash {
+    0%{
+        background-color: #FFF;
+    }
+    15%{
+        background-color: #2E00EA;
+    }
+    33%{
+        background-color: #FFF;
+    }
+    48%{
+        background-color: #FEED00;
+
+    }
+    66%{
+        background-color: #FFF;
+    }
+    81%{
+        background-color: #FF0000;
+    }
+    100%{
+        background-color: #FFF;
+    }
+}*/
+/*@keyframes blueFlash {
+    0%{
+        background-color: #FFF;
+    }
+
+    90%{
+        background-color: #FFF;
+    }
+    100%{
+        background-color:  #2E00EA;
+    }
+}*/
+@keyframes positionAbout{
+    
+}
+@keyframes positionBlog {
+    
+}
+
+.projectsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 40vh;
+    .titleSectionPersonnalProject{
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: #FFF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 37px;
+        padding-left: 13vw;
+        padding-bottom: 18vh;
+    }
+    .projects{
+        padding-right: 8vw;
+        padding-left: 8vw;
+        //flex-wrap: wrap;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(21, 3vw);
+        grid-template-rows: repeat(21, 3vw);
+        grid-template-areas: 
+        ". A A A A A A . . . . . . . . . . . . . ."
+        ". A A A A A A . . . . . . . . . . . . . ."
+        ". A A A A A A . . . . . . . . . . . . . ."
+        ". A A A A A A . . . . . . . . . . . . . ."
+        ". A A A A A A . . . . . . . . . . . . . ."
+        ". A A A A A A . . . . . . B B B B B B B B"
+        ". . . . . . . . . . . . . B B B B B B B B"
+        ". . . . . . . . . . . . . B B B B B B B B"
+        ". . . . . . . . . . . . . B B B B B B B B"
+        ". . . . . . . . . . . . . B B B B B B B B"
+        "C C C C C C C C C C . . . B B B B B B B B"
+        "C C C C C C C C C C . . . B B B B B B B B"
+        "C C C C C C C C C C . . . B B B B B B B B"
+        "C C C C C C C C C C . . . . . . . . . . ."
+        "C C C C C C C C C C . . . . . . . . . . ."
+        "C C C C C C C C C C . . . . . . . . . . ."
+        "C C C C C C C C C C . . . . . . . . . . ."
+        "C C C C C C C C C C . . . . . . . . . . ."
+        "C C C C C C C C C C . . . . . . . . . . ."
+        "C C C C C C C C C C . . . . D D D D D D ."
+        ". . . . . . . . . . . . . . D D D D D D ."
+        ". . . . . . . . . . . . . . D D D D D D ."
+        ". . . . . . . . . . . . . . D D D D D D ."
+        ". . . . . . . . . . . . . . D D D D D D ."
+        ". . . . . . . . . . . . . . D D D D D D .";
+
+        .project1{
+            grid-area: A;
+            background-color: #C4C4C4;
+        }
+        .project2{
+            grid-area: B;
+            background-color: #C4C4C4;
+        }
+        .project3{
+            grid-area: C;
+            background-color: #C4C4C4;
+        }
+        .project4{
+            grid-area: D;
+            background-color: #C4C4C4;
         }
     }
 }
-// On-Off btn
-$toggle-background-color-on: rgba(255, 255, 255, 0.65);
-$toggle-background-color-off: transparent;
-$toggle-control-color: white;
-$toggle-width: 100px;
-$toggle-height: 50px;
-$toggle-gutter: 5px;
-$toggle-radius: 50%;
-$toggle-control-speed: .15s;
-$toggle-control-ease: ease-in;
-
-// These are our computed variables
-// change at your own risk.
-$toggle-radius: $toggle-height / 2;
-$toggle-control-size: $toggle-height - ($toggle-gutter * 2);
-
-.toggle-control {
-  display: block;
-  position: relative;
-  padding-left: $toggle-width;
-  margin-bottom: 60px;
-  cursor: pointer;
-  font-size: 22px;
-  user-select: none;
-
-  input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-
-  input:checked ~ .control {
-    background-color: $toggle-background-color-on;
-    
-    &:after {
-      left: $toggle-width - $toggle-control-size - $toggle-gutter;
-    }
-  }
-
-  .control {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: $toggle-height;
-    width: $toggle-width;
-    border-radius: $toggle-radius;
-    background-color: $toggle-background-color-off;
-    transition: background-color $toggle-control-speed $toggle-control-ease;
-    border: 2px solid #FFF;
-
-    &:after {
-      content: "";
-      position: absolute;
-      left: $toggle-gutter;
-      top: $toggle-gutter;
-      width: $toggle-control-size;
-      height: $toggle-control-size;
-      border-radius: $toggle-radius;
-      background: $toggle-control-color;
-      transition: left $toggle-control-speed $toggle-control-ease;
-    }
-  }
-}
-

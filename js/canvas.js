@@ -19,6 +19,7 @@ y3 = 299;
 dx3 = 3
 dy3 = 4;
 
+
 function anim (){
     requestAnimationFrame(anim);
     console.log('hello');
@@ -74,6 +75,7 @@ function anim (){
 
     x3 += dx3;
     y3 += dy3;
+
 }
 
 anim();
