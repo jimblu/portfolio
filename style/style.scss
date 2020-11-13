@@ -14,7 +14,20 @@ body{
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    border-bottom: 30px ridge #FFF;
+    border-bottom: 30px ridge #9CDAF0;
+}
+
+.headerContainer{
+    height: 100vh;
+    a{
+        position: absolute;
+        top: calc(100vh - 84px);
+        left: 70vw;
+    img{
+        height: 100px;
+        width: 120px;
+        }
+    }
 }
 .header{
     display: flex;
@@ -34,7 +47,6 @@ body{
     .aboutMe{
         font-family: DM Mono;
         font-weight: 400;
-        //font-size: clamp(1rem, calc(1rem + 2vw), 3rem); 
         font-size: calc(1rem + 2vw);
         color: #FFFFFF;
         max-width: 1000px;
@@ -84,54 +96,11 @@ div.burgerLevels{
     }
 }
 
-/*@keyframes blueFlash {
-    0%{
-        background-color: #FFF;
-    }
-    15%{
-        background-color: #2E00EA;
-    }
-    33%{
-        background-color: #FFF;
-    }
-    48%{
-        background-color: #FEED00;
-
-    }
-    66%{
-        background-color: #FFF;
-    }
-    81%{
-        background-color: #FF0000;
-    }
-    100%{
-        background-color: #FFF;
-    }
-}*/
-/*@keyframes blueFlash {
-    0%{
-        background-color: #FFF;
-    }
-
-    90%{
-        background-color: #FFF;
-    }
-    100%{
-        background-color:  #2E00EA;
-    }
-}*/
-@keyframes positionAbout{
-    
-}
-@keyframes positionBlog {
-    
-}
-
 .projectsSection{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 40vh;
+    height: 200%;
     .titleSectionPersonnalProject{
         font-family: 'Montserrat Alternates', sans-serif;
         color: #FFF;
@@ -140,16 +109,16 @@ div.burgerLevels{
         font-size: 2rem;
         line-height: 37px;
         padding-left: 13vw;
-        padding-bottom: 18vh;
+        padding-bottom: 10%;
     }
     .projects{
         padding-right: 8vw;
         padding-left: 8vw;
-        //flex-wrap: wrap;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(21, 3vw);
-        grid-template-rows: repeat(21, 3vw);
+        justify-items: stretch;
+        grid-template-columns: repeat(21, 4vw);
+        grid-template-rows: repeat(28, 4vw);
         grid-template-areas: 
         ". A A A A A A . . . . . . . . . . . . . ."
         ". A A A A A A . . . . . . . . . . . . . ."
@@ -175,8 +144,19 @@ div.burgerLevels{
         ". . . . . . . . . . . . . . D D D D D D ."
         ". . . . . . . . . . . . . . D D D D D D ."
         ". . . . . . . . . . . . . . D D D D D D ."
-        ". . . . . . . . . . . . . . D D D D D D .";
-
+        ". . . . . . . . . . . . . . D D D D D D ."
+        ". . . . . . . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . . . . . . .";
+        @media only screen and (max-device-width: 590px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+        }
         .project1{
             grid-area: A;
             background-color: #C4C4C4;
@@ -193,5 +173,51 @@ div.burgerLevels{
             grid-area: D;
             background-color: #C4C4C4;
         }
+    }
+}
+@media only screen and (max-device-width: 590px) {
+    .project{
+        width: calc(200px + 2vw);
+        height: calc(200px + 2vw);
+        margin: 2%;
+    }
+}
+
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    padding-left: 13vw;
+    padding-right: 13vh;
+    .titleSectionAbout{
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: #FFF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 37px;
+    }
+    .textAboutMe{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(1rem + 1vw);
+        line-height: 33px;       
+        color: #FFFFFF;
+        min-width: 280px;
+        
+    }
+    @media only screen and (max-device-width: 590px) {
+        padding: 0;
+    }
+}
+.socialMediaContainer{
+    display: flex;
+    align-self: flex-end;
+    img{
+        height: calc(35px + 2vw);
+        width: calc(35px + 2vw);
+        padding: 10px;
     }
 }
