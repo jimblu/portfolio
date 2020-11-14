@@ -22,7 +22,6 @@ dy3 = 4;
 
 function anim (){
     requestAnimationFrame(anim);
-    console.log('hello');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     ctx.beginPath();
