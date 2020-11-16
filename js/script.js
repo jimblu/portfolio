@@ -15,12 +15,12 @@ const effect4 = document.querySelector('.effectProject4');
 const RevealOnScroll = (element, heightElement, effectElement) => {
     window.addEventListener('scroll', () => {
     if(scrollY - heightElement >=  element.getBoundingClientRect().top - window.innerHeight + scrollY) {
-        element.style.transition = '1s cubic-bezier(.12,1.08,.19,1.01)';
+        element.style.transition = '0.5s';
         element.style.boxShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), -20px 40px 0px rgba(0, 0, 0, 0.25), 20px 40px 0px 10px rgba(0, 0, 0, 0.25)';
         element.style.transform = 'width';
         element.style.width = '100%'
-        effectElement.style.transition = '1s cubic-bezier(.12,1.01,.19,0.99)';
-        effectElement.style.transitionDelay = '250ms';
+        effectElement.style.transition = '0.5s';
+        effectElement.style.transitionDelay = '500ms';
         effectElement.style.transform = 'scaleX(0)'
     //    setTimeout(effectElement.style.opacity = '0', 100000);
         console.log('ok');
