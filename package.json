@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed/",
     "sass": "sass --watch ./style/style.scss:./style/style.css --style compressed",
+    "sass2": "sass --watch ./style/style2.scss:./style/style2.css --style compressed",
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },

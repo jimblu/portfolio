@@ -16,7 +16,7 @@ const RevealOnScroll = (element, heightElement, effectElement) => {
     window.addEventListener('scroll', () => {
     if(scrollY - heightElement >=  element.getBoundingClientRect().top - window.innerHeight + scrollY) {
         element.style.transition = '0.5s';
-        element.style.boxShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), -20px 40px 0px rgba(0, 0, 0, 0.25), 20px 40px 0px 10px rgba(0, 0, 0, 0.25)';
+      //  element.style.boxShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), -20px 40px 0px rgba(0, 0, 0, 0.25), 20px 40px 0px 10px rgba(0, 0, 0, 0.25)';
         element.style.transform = 'width';
         element.style.width = '100%'
         effectElement.style.transition = '0.5s';
@@ -36,3 +36,9 @@ RevealOnScroll(project4, height4, effect4);
 
 console.log(scrollY);
 console.log(project1.getBoundingClientRect().bottom);
+
+const container = document.querySelector('.container');
+window.addEventListener('scroll', () => {
+  container.style.backgroundPositionX = window.scrollY / 7 + "px";
+  console.log('yeees');
+})
