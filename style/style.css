@@ -349,6 +349,7 @@ div.burgerLevels {
 }
 
 .wave {
+  z-index: 5000;
   position: absolute;
   bottom: 0;
   left: 0;
