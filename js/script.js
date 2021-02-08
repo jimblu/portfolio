@@ -28,12 +28,12 @@ const RevealOnScroll = (element, heightElement, effectElement) => {
       //    setTimeout(effectElement.style.opacity = '0', 100000);
       console.log("ok");
       //border
-      if ((element.style.width = "100%")) {
+      setTimeout(() => {
         project1.style.border = "solid #fff 1px";
         project2.style.border = "solid #fff 1px";
         project3.style.border = "solid #fff 1px";
         project4.style.border = "solid #fff 1px";
-      }
+      }, 2000);
     }
   });
 };
