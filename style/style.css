@@ -12,7 +12,7 @@ body {
   padding: 9vh 5vw 0 5vw;
   width: calc(100vw - 10vw);
   position: relative;
-  background: top 40% left 20% no-repeat url(../img/nuage.png), top 50% left 50% no-repeat url(../img/nuage.png);
+  background: top 40% left 20% no-repeat url(../img/nuage.png), top 70% right 70% no-repeat url(../img/nuage.png);
   background-size: 20%;
 }
 
@@ -178,6 +178,8 @@ div.burgerLevels {
 }
 
 .projectsSection .projects {
+  background: top 30% left 20% no-repeat url(../img/nuage.png), top 80% right 70% no-repeat url(../img/nuage.png);
+  background-size: 20%;
   padding-right: 8vw;
   padding-left: 8vw;
   display: -ms-grid;
@@ -190,6 +192,12 @@ div.burgerLevels {
   -ms-grid-rows: (calc(20px + 2vw))[28];
       grid-template-rows: repeat(28, calc(20px + 2vw));
       grid-template-areas: ". A A A A A A . . . . . . . . . . . . . ." ". A A A A A A . . . . . . . . . . . . . ." ". A A A A A A . . . . . . . . . . . . . ." ". A A A A A A . . . . . . . . . . . . . ." ". A A A A A A . . . . . . . . . . . . . ." ". A A A A A A . . . . . . B B B B B B B B" ". . . . . . . . . . . . . B B B B B B B B" ". . . . . . . . . . . . . B B B B B B B B" ". . . . . . . . . . . . . B B B B B B B B" ". . . . . . . . . . . . . B B B B B B B B" "C C C C C C C C C C . . . B B B B B B B B" "C C C C C C C C C C . . . B B B B B B B B" "C C C C C C C C C C . . . B B B B B B B B" "C C C C C C C C C C . . . . . . . . . . ." "C C C C C C C C C C . . . . . . . . . . ." "C C C C C C C C C C . . . . . . . . . . ." "C C C C C C C C C C . . . . . . . . . . ." "C C C C C C C C C C . . . . . . . . . . ." "C C C C C C C C C C . . . . . . . . . . ." "C C C C C C C C C C . . . . D D D D D D ." ". . . . . . . . . . . . . . D D D D D D ." ". . . . . . . . . . . . . . D D D D D D ." ". . . . . . . . . . . . . . D D D D D D ." ". . . . . . . . . . . . . . D D D D D D ." ". . . . . . . . . . . . . . D D D D D D ." ". . . . . . . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . . . . . . .";
+}
+
+.projectsSection .projects img {
+  width: 300px;
+  height: 300px;
+  z-index: 999;
 }
 
 @media only screen and (max-device-width: 590px) {
@@ -217,10 +225,23 @@ div.burgerLevels {
   -ms-grid-column-span: 6;
   grid-area: A;
   background: url(/img/weatherAppGIF.gif);
-  background-clip: border-box;
+  cursor: pointer;
+}
+
+.projectsSection .projects .project1:hover {
+  opacity: 0.5;
 }
 
 .projectsSection .projects .project1 .effectProject1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   background-color: #2e00ea;
   width: 100%;
@@ -236,11 +257,24 @@ div.burgerLevels {
   -ms-grid-column-span: 8;
   grid-area: B;
   background: url(/img/cvGIF.gif);
-  background-clip: border-box;
   background-size: 110% 100%;
+  cursor: pointer;
+}
+
+.projectsSection .projects .project2:hover {
+  opacity: 0.5;
 }
 
 .projectsSection .projects .project2 .effectProject2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   background-color: #feed00;
   width: 100%;
@@ -256,11 +290,24 @@ div.burgerLevels {
   -ms-grid-column-span: 10;
   grid-area: C;
   background: center url(/img/portfolioGIF.gif);
-  background-clip: border-box;
   background-size: 102% 100%;
+  cursor: pointer;
+}
+
+.projectsSection .projects .project3:hover {
+  opacity: 0.5;
 }
 
 .projectsSection .projects .project3 .effectProject3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   background-color: #fff;
   width: 100%;
@@ -276,10 +323,23 @@ div.burgerLevels {
   -ms-grid-column-span: 6;
   grid-area: D;
   background: bottom left -240px url(/img/MIGIF.gif);
-  background-clip: border-box;
+  cursor: pointer;
+}
+
+.projectsSection .projects .project4:hover {
+  opacity: 0.5;
 }
 
 .projectsSection .projects .project4 .effectProject4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   background-color: #ff0000;
   width: 100%;
@@ -314,10 +374,12 @@ div.burgerLevels {
   }
 }
 
-.projectGif {
+.lienProject {
+  z-index: 99999;
   width: 100%;
   height: 100%;
   position: absolute;
+  cursor: pointer;
 }
 
 .aboutSection {
