@@ -176,7 +176,8 @@ div.burgerLevels {
     }
     .project1 {
       grid-area: A;
-      background-color: #c4c4c4;
+      background: url(/img/weatherAppGIF.gif);
+      background-clip: border-box;
       .effectProject1 {
         position: absolute;
         background-color: #2e00ea;
@@ -187,7 +188,9 @@ div.burgerLevels {
     }
     .project2 {
       grid-area: B;
-      background-color: #c4c4c4;
+      background: url(/img/cvGIF.gif);
+      background-clip: border-box;
+      background-size: 110% 100%;
       .effectProject2 {
         position: absolute;
         background-color: #feed00;
@@ -198,7 +201,9 @@ div.burgerLevels {
     }
     .project3 {
       grid-area: C;
-      background-color: #c4c4c4;
+      background: center url(/img/portfolioGIF.gif);
+      background-clip: border-box;
+      background-size: 102% 100%;
       .effectProject3 {
         position: absolute;
         background-color: #fff;
@@ -209,7 +214,8 @@ div.burgerLevels {
     }
     .project4 {
       grid-area: D;
-      background-color: #c4c4c4;
+      background: bottom left -240px url(/img/MIGIF.gif);
+      background-clip: border-box;
       .effectProject4 {
         position: absolute;
         background-color: #ff0000;
@@ -233,6 +239,11 @@ div.burgerLevels {
       }
     }
   }
+}
+.projectGif {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .aboutSection {

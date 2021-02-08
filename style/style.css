@@ -216,7 +216,8 @@ div.burgerLevels {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
   grid-area: A;
-  background-color: #c4c4c4;
+  background: url(/img/weatherAppGIF.gif);
+  background-clip: border-box;
 }
 
 .projectsSection .projects .project1 .effectProject1 {
@@ -234,7 +235,9 @@ div.burgerLevels {
   -ms-grid-column: 14;
   -ms-grid-column-span: 8;
   grid-area: B;
-  background-color: #c4c4c4;
+  background: url(/img/cvGIF.gif);
+  background-clip: border-box;
+  background-size: 110% 100%;
 }
 
 .projectsSection .projects .project2 .effectProject2 {
@@ -252,7 +255,9 @@ div.burgerLevels {
   -ms-grid-column: 1;
   -ms-grid-column-span: 10;
   grid-area: C;
-  background-color: #c4c4c4;
+  background: center url(/img/portfolioGIF.gif);
+  background-clip: border-box;
+  background-size: 102% 100%;
 }
 
 .projectsSection .projects .project3 .effectProject3 {
@@ -270,7 +275,8 @@ div.burgerLevels {
   -ms-grid-column: 15;
   -ms-grid-column-span: 6;
   grid-area: D;
-  background-color: #c4c4c4;
+  background: bottom left -240px url(/img/MIGIF.gif);
+  background-clip: border-box;
 }
 
 .projectsSection .projects .project4 .effectProject4 {
@@ -306,6 +312,12 @@ div.burgerLevels {
             align-items: center;
     padding: 0;
   }
+}
+
+.projectGif {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .aboutSection {
