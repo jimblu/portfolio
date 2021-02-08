@@ -3,7 +3,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[<img align="center" alt="" width="500px" src="https://user-images.githubusercontent.com/71411560/107291345-57f8d380-6a68-11eb-9277-404132c667b6.png" />](https://tender-mccarthy-a2e5d4.netlify.app/)
+[<img align="center" alt="portfolio" width="550px" src="https://user-images.githubusercontent.com/71411560/107291345-57f8d380-6a68-11eb-9277-404132c667b6.png" />](https://tender-mccarthy-a2e5d4.netlify.app/)
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
