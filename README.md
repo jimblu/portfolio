@@ -1,4 +1,4 @@
-# portfolio
+# portfolio                     Check the progress, click on the image!
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
