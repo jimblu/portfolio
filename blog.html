@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style2.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Jimmy Pez Blog</title>
   </head>
   <body>
-    <div class="container2">
-      <header>
+    <div class="bandesTransition">
+      <div class="bande transition-grow"></div>
+      <div class="bande transition-grow "></div>
+      <div class="bande transition-grow "></div>
+      <div class="bande transition-grow "></div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a class="navLink" href="/index.html">HOME</a></li>
+        <li><a class="navLink" href="/projects.html">PROJECTS</a></li>
+        <li><a class="navLink" href="/about.html">ABOUT<a></li>
+        <li><a class="navLink" href="/blog.html">BLOG<a></li>
+          
+      </ul>
+    </nav>
+    <div id="swup">
+      <div class="blogContainer">
+      <header class="headBlog">
         <h1 class="blogTilte">My Blog</h1>
       </header>
       <main class="articles">
-      <section class="article">
-        <div class="info">
-          <h2 class="articleTitle">How I developed my portfolio</h2>
-          <h3 class="articleDate">Date</h3>
-        </div>
-        <p class="articleText">
-          As I said in my previous post, the main goal was to have somewhere to share my thoughts as soon as possible. I didn’t want to wait 3 months before I was able to post my first post. So I decided to keep things simple on the technical side as well. Here are the steps I took to have my personal website
-
-1- Design and specs
-When it comes to development, everything is so much easier when features have been thought through before starting coding. Even for personal projects, it’s super important to keep that in mind. As it comes for features, I chose to make the most out of basic functionnalities. With that in mind I defined the pages I wanted, I can always develop more features later.
-
-I made a simple design on Figma. Figma is a Sketch-like application. You can design your project super easily, and for free !
-
-2- Coding
-Many people around me are super hyped with GatsbyJS, and I already love coding in React / NodeJS. One of the advantages of Gatsby is it takes React code, and makes static pages from it, which makes your website really fast. Plus, the community around Gatsby is great. I also knew there was a plugin that allows to write pages in MD and automatically converts it in HTML. My choice was simple 🤩
-
-I followed Jean Elie’s tutorial who’s my ex colleague at PayFit. The Gatsby official documentation is really good. I’d add some more details to Jean-Elie’s tutorial: Google Analytics is already in the blog starter, so all you have to worry about is to set your ID in gatsby-config.js
-        </p>
-      </section>
+        <section class="article">
+          <div class="info">
+            <h2 class="articleTitle">How I developed my portfolio</h2>
+            <h3 class="articleDate">Soon</h3>
+          </div>
+          <p class="articleText">
+            ............................................................................
+            ............................................................................
+            ............................................................................
+            ............................................................................
+            ............................................................................
+            ............................................................................
+            ............................................................................
+          </p>
+        </section>
       </main>
-      <footer>
-        <div class="socialMediaContainer">
-            <div class="socialMedia1"><a href="https://github.com/jimblu"><img src="img/github.png" alt=""/></a></div>
-            <div class="socialMedia2"><a><img src="img/in.png" alt=""/></a></div>
-            <div class="socialMedia3"><a href="mailto:jimmy.pezp@gmail.com"><img src="img/email.png" alt=""/></a></div>
+      <!-- <footer class="footBlog">
+        <div class="socialMediaContainerBlog">
+          <div class="socialMedia1">
+            <a href="https://github.com/jimblu"
+              ><img src="img/github.png" alt=""
+            /></a>
+          </div>
+          <div class="socialMedia2">
+            <a href="https://www.linkedin.com/in/jimmy-pez-b62953205/"><img src="img/in.png" alt="" /></a>
+          </div>
+          <div class="socialMedia3">
+            <a href="mailto:jimmy.pezp@gmail.com"
+              ><img src="img/email.png" alt=""
+            /></a>
+          </div>
         </div>
-      </footer>
+      </footer> -->
+      </div>
     </div>
+  <script src="js/script.js"></script>
   </body>
 </html>

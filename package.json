@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed/",
-    "sass": "sass --watch ./style/style.scss:./style/style.css --style compressed",
+    "sassAll": "npm run sass1 && npm run sass2 && npm run sass3 && npm run sass4 ",
+    "sass1": "sass --watch ./style/style.scss:./style/style.css --style compressed",
     "sass2": "sass --watch ./style/style2.scss:./style/style2.css --style compressed",
+    "sass3": "sass --watch ./style/style3.scss:./style/style3.css --style compressed",
+    "sass4": "sass --watch ./style/style4.scss:./style/style4.css --style compressed",
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
@@ -22,13 +25,13 @@
   },
   "homepage": "https://github.com/jimblu/portfolio#readme",
   "dependencies": {
-    "jump.js": "^1.0.2"
+    "parcel": "^1.12.4",
+    "splitting": "^1.0.6",
+    "swup": "^2.0.14"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.2",
-    "parcel-bundler": "^1.12.4",
-    "postcss": "^8.1.7",
-    "postcss-cli": "^8.2.0",
-    "sass": "^1.29.0"
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "sass": "^1.32.7"
   }
 }
