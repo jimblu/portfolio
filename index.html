@@ -7,41 +7,32 @@
     <title>Jimmy Pez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <div class="bandesTransition">
-      <div class="bande transition-grow"></div>
-      <div class="bande transition-grow "></div>
-      <div class="bande transition-grow "></div>
-      <div class="bande transition-grow "></div>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a class="navLink" href="/index.html">HOME</a></li>
-        <li><a class="navLink" href="/projects.html">PROJECTS</a></li>
-        <li><a class="navLink" href="/about.html">ABOUT<a></li>
-        <li><a class="navLink" href="/blog.html">BLOG<a></li>
-          
-      </ul>
-    </nav>
-    <canvas id="canvas"></canvas>
     <div id="swup">
-      <div class="cache1"></div>
-      <div class="headerContainer">
+      <div class="main">
         <header class="header">
-          <h1 data-splitting>
-            I'm Jim, a web developer. When I'm not busy creating things, I'm
-            promoting the joy of living.
+          <h1>
+            Hi ! I'm Jimmy, a web developer from France.
           </h1>
         </header>
       </div>
     </div>
-    <script src="js/canvas.js"></script>
+    <nav class="nav">
+      <ul>
+        <li class="menuItem H"><a class="navLink" href="/index.html">HOME</a></li>
+        <li class="menuItem P"><a class="navLink" href="/projects.html">PROJETS</a></li>
+        <li class="menuItem A"><a class="navLink" href="/about.html">ABOUT<a></li>
+        <li class="menuItem B"><a class="navLink" href="/blog.html">BLOG<a></li>        
+      </ul>
+    </nav>
+    <div class="redBall transition-Ball"></div>
+    <div class="yellowBall transition-Ball"></div>
+    <div class="blueBall transition-Ball"></div>
     <script src="js/script.js"></script>
+    <script src="js/interact.js"></script>
   </body>
 </html>
