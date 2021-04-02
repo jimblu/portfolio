@@ -3,14 +3,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[<img align="center" alt="portfolio" width="550px" src="https://user-images.githubusercontent.com/71411560/107291345-57f8d380-6a68-11eb-9277-404132c667b6.png" />](https://tender-mccarthy-a2e5d4.netlify.app/)
+[<img align="center" alt="portfolio" width="550px" src="https://user-images.githubusercontent.com/71411560/113415713-16c5d580-93c0-11eb-80f5-fff8d5735f60.png" />](https://quizzical-hoover-b96dc2.netlify.app/)
 
-Check the progress, click on the image!
+Check it, click on the image!
 
-I created in this project a portfolio to present all of my projects. The animation of the balls was created with canvas.
+I created in this project a portfolio to present all of my projects.
 
 ### Built With
 
 * HTML
 * CSS
-* Native javascript
+* javascript
